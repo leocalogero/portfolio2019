@@ -1,0 +1,171 @@
+.toggle {position: absolute; display: none}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.menu {
+  margin: 0 auto;
+  position: absolute;
+  top: 135px;
+  left: 140px;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
+.btn {
+  width: 65px;
+  height: 65px;
+  border-radius: 70px;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn__small {
+    width: 70px;
+    height: auto;
+    padding: 5px 5px;
+    border-radius: 25px;
+}
+
+.material-icons.md-36 { font-size: 36px; color: #000 }
+
+.btn {
+  background: #ED5656;
+  filter: invert(100%);
+  animation: none;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  
+  -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.btn a {
+    color:#000 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-shadow:0.5px 0.5px 0px rgba(150, 150, 150, 1);
+}
+
+.btn:not(:first-child) {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  z-index: -2;
+  
+  -webkit-transition: transform position 0.6s cubic-bezier(.87,-.41,.19,1.44);
+  transition: transform position 0.6s cubic-bezier(.87,-.41,.19,1.44);
+}
+
+.btn:nth-child(2) {top:0px;-webkit-transition-delay: 0s;transition-delay: 0s}
+.btn:nth-child(3) {top:0px;left:0px;-webkit-transition-delay: 0.1s;transition-delay: 0.1s}
+.btn:nth-child(4) {left:0px;;-webkit-transition-delay: 0.2s;;transition-delay: 0.2s}
+.btn:nth-child(5) {top:0px;left:0px;-webkit-transition-delay: 0.3s;transition-delay: 0.3s}
+.btn:nth-child(6) {top:0px;left: 0px;-webkit-transition-delay: 0.4s;transition-delay: 0.4s}
+.btn:nth-child(7) {top:0px;left:0px;-webkit-transition-delay: 0.5s;transition-delay: 0.5s}
+
+input#toggle:checked ~ #show-menu .btn:nth-child(2) {
+  top:-60px;
+  left: -12px;
+  transform: rotate(-90deg);
+  opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input#toggle:checked ~ #show-menu .btn:nth-child(3) {
+  top: -50px;
+  left: 40px;
+  transform: rotate(-50deg);
+  opacity: 1;
+  opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input#toggle:checked ~ #show-menu .btn:nth-child(4) {
+  top: 0px;
+    left: 75px;
+    transform: rotate(-10);
+    opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input#toggle:checked ~ #show-menu .btn:nth-child(5) {
+  top: 50px;
+  left: 70px;
+  transform: rotate(25deg);
+  opacity: 1;
+  opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input#toggle:checked ~ #show-menu .btn:nth-child(6) {
+  top:85px;
+  left: 40px;
+  transform: rotate(45deg);
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input#toggle:checked ~ #show-menu .btn:nth-child(7) {
+  top:100px;
+  left: -10px;
+  transform: rotate(90deg);
+  opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+
+.menuBtn, .closeBtn {
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.closeBtn {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+input#toggle:checked ~ #show-menu .btn .menuBtn {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+input#toggle:checked ~ #show-menu .btn .closeBtn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+@media all and (max-width: 1690px) {
+
+ }
+@media all and (max-width: 1280px) {
+
+ }
+@media all and (max-width: 980px) {
+  .menu {
+    left: 80px;
+    top: 130px;
+  }
+ }
+@media all and (max-width: 736px) {
+ }
+@media all and (max-width: 480px) {
+  .site-main-banner .caption {
+    padding-top: 0;
+  }
+  .menu {
+   display: none;
+  }
+}
