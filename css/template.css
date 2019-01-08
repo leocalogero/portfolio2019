@@ -137,6 +137,30 @@ hr {
 }
 
 /* White section (.site-white-section) class */
+
+
+.scroll-indicator { 
+  position: absolute;
+  margin-top: 150px;
+  left: 49%;
+  font-size: 20px;
+  color: white;
+  -webkit-animation: bounce 1.3s infinite; 
+  animation: bounce 1.3s infinite;
+}
+
+@-webkit-keyframes bounce {
+   0% { top: 15%; }
+   50%   { top: 20%; }
+   100% { top: 15%; }
+}
+
+@keyframes bounce {
+   0% { top: 15%; }
+   50%   { top: 20%; }
+   100% { top: 15%; }
+}
+
 .site-white-section, .site-dark-section {
   margin: 0;
   padding:100px 0;
@@ -268,6 +292,24 @@ hr {
   display: inline-block;
 }
 
+/* effect-shine */
+.poop {
+  transition: 0.1s ease-in-out;
+  cursor: none;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
 
 /* Theme button */
 a.theme-btn {
@@ -409,7 +451,7 @@ header.site-header {
   width: 100%;
   clear: both;
   /* background: #66e596; */
-  position: relative;
+  position: fixed;
   /* min-height: 5px; */
   z-index: 100;
   animation: hueRotate 150s infinite;
@@ -2224,6 +2266,12 @@ Education (section)
 
 -----------------------------------------------------------------------------------*/
 /* Employement container */
+
+.school {
+  width: 120px;
+  height: auto;
+}
+
 .site-employement {
   margin: 0;
   display: block;

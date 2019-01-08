@@ -12,10 +12,14 @@
   margin: 0 auto;
   position: absolute;
   top: 135px;
-  left: 140px;
+  left: 100px;
   margin-left: -25px;
   margin-top: -25px;
 }
+
+/*.menu-btn {
+  pointer-events: none;
+}*/
 
 .btn {
   width: 65px;
