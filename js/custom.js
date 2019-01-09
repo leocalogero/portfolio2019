@@ -239,3 +239,25 @@ function activateCheats() {
   console.log('Konami!')
 }
 
+$(document).mousemove(function(e) {
+  var x = e.pageX;
+  var y = e.pageY;
+  
+  $('.cursor').css('left', x - 5)
+  $('.cursor').css('top', y - 5)
+})
+
+$(document).mousemove(function(e) {
+  var x = e.pageX;
+  var y = e.pageY;
+  
+  $('.cursor__two').css('left', x )
+  $('.cursor__two').css('top', y + 30)
+})
+
+$('.grow').hover(
+       function(){ $('.cursor').addClass('cursor--hover') },
+       function(){ $('.cursor').removeClass('cursor--hover') },
+       function(){ $('.cursor__two').addClass('cursor__two--hover') },
+       function(){ $('.cursor__two').removeClass('cursor__two--hover') },
+);

@@ -440,9 +440,9 @@
 }
 @media screen and (max-width: 576px) {
   .blog-img {
-    max-width: 300px;
-    height: 300px;
-    top: 0;
+    max-width: 230px;
+    height: 230px;
+    top: 1%;
   }
 }
 .blog-img__item {

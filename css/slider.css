@@ -87,6 +87,16 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .swiper-pagination {
+    bottom: 0;
+    top: 24%;
+    padding-top: 20px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 4px ;
+    height: 4px ;
+    margin: 4px !important;
+  }
 }
 
 .bg-shape {
@@ -283,16 +293,16 @@ a {
   }
 
   .next, .prev {
-    top: 19%;
-    transform: scale(0.4);
+    top: -9%;
+    transform: scale(0.35);
   }
 
   .prev {
-    left: -13%;
+    left: -28px;
   }
 
   .next {
-    right: -13%;
+    right: -28px;
   }
 }
 
@@ -695,8 +705,8 @@ a {
 }
 @media screen and (max-width: 576px) {
   .product-img {
-    max-width: 270px;
-    height: 270px;
+    max-width: 250px;
+    height: 250px;
     top: 0;
   }
 }
