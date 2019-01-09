@@ -257,3 +257,18 @@ $('.grow').hover(
        function(){ $('.cursor__two').addClass('cursor__two--hover') },
        function(){ $('.cursor__two').removeClass('cursor__two--hover') },
 );
+
+$('.expand').hover(
+       function(){ $('.cursor').addClass('cursor--expand') },
+       function(){ $('.cursor').removeClass('cursor--expand') },
+);
+
+$('.crazy').hover(
+       function(){ $('.cursor').addClass('cursor--crazy') },
+       function(){ $('.cursor').removeClass('cursor--crazy') },
+);
+
+$('.highlight').hover(
+       function(){ $('.cursor').addClass('cursor--highlight') },
+       function(){ $('.cursor').removeClass('cursor--highlight') },
+);
