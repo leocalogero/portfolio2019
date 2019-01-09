@@ -154,34 +154,34 @@ hr {
   pointer-events: none;
   animation: hueRotate 100s infinite;
   transition: 0.05 linear all;
-  box-shadow: 0 3px 10px 1px rgba(0,0,0,.48);
+  box-shadow: 0 3px 10px 1px rgba(0,0,0,.18);
 }
 .cursor__two {
   width: 30px;
   height: 30px;
   transition: 0.2s linear all;
   animation: hueRotate 100s infinite;
-  box-shadow: 0 9px 30px 3px rgba(0,0,0,.46);
+  box-shadow: 0 9px 30px 3px rgba(0,0,0,.16);
 }
 
 .cursor--hover {
   transform: scale(1.5);
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.47) both;
   animation-delay: 0.3s;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-  background: indigo;
+  background: lime;
 }
 
 .cursor__two--hover {
   transform: scale(1.5);
-  animation: shake 0.82scubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.47) both;
   animation-delay: 0.7s;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-  background: indigo;
+  background: lime;
 }
 
 @keyframes shake {

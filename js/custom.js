@@ -170,10 +170,6 @@ swiper.on('slideChange', function () {
     }
 });
 
-$(".js-fav").on("click", function() {
-    $(this).find('.heart').toggleClass("is-active");
-});
-
 /* ----------------------------------------------------------------------------------*/
 /* Parallax smooth scrolling
  * Source: http://mmkjony.github.io/enllax.js/ */
