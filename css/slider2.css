@@ -234,6 +234,10 @@
   margin-right: 40px;
   cursor: pointer;
   box-shadow: 0px 8px 12px 0px rgba(24,50,184,0.19);
+  transition: 0.15s ease-in-out;
+}
+.blog-slider__cart:hover {
+  background: seagreen;
 }
 @media screen and (max-width: 768px) {
   .blog-slider__cart {

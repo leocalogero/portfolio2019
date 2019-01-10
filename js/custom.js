@@ -272,3 +272,8 @@ $('.highlight').hover(
        function(){ $('.cursor').addClass('cursor--highlight') },
        function(){ $('.cursor').removeClass('cursor--highlight') },
 );
+
+$('.image').hover(
+       function(){ $('.cursor').addClass('cursor--image') },
+       function(){ $('.cursor').removeClass('cursor--image') },
+);
