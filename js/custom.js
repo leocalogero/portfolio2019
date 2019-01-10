@@ -70,6 +70,10 @@ var swiper = new Swiper('.product-slider', {
         type: 'bullets',
         clickable: true,
     },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
     effect: 'fade',
     // initialSlide: 2,
     loop: true,
@@ -126,6 +130,10 @@ var swiper = new Swiper('.blog-slider', {
         clickable: true,
     },
     effect: 'fade',
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
     // initialSlide: 2,
     loop: true,
     navigation: {

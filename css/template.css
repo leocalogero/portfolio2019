@@ -167,7 +167,8 @@ hr {
 
 .cursor--hover {
   transform: scale(1.5);
-  animation: shake 0.42s cubic-bezier(.36,.07,.19,.47) both;
+  animation: shake 0.45s cubic-bezier(.36,.07,.19,.47);
+  animation-iteration-count: 2;
   animation-delay: 0.1s;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
