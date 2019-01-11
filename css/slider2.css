@@ -239,6 +239,10 @@
 .blog-slider__cart:hover {
   background: seagreen;
 }
+.blog-slider__cart:active {
+  transform: translateY(2px) !important;
+  box-shadow: 0 3px 10px 1px rgba(0,0,0,.18) !important;
+}
 @media screen and (max-width: 768px) {
   .blog-slider__cart {
     margin-right: 30px;
