@@ -143,6 +143,15 @@ hr {
   cursor: none !important;
 }
 
+@media screen and (max-width: 767px) {
+  .cursor {
+    display: none !important;
+    cursor: none !important;
+  }
+}
+
+
+
 .cursor {
   position: absolute;
   z-index: 1000000000000000;
